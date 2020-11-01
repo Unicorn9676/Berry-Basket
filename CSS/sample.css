@@ -6,11 +6,10 @@ body {
 }
 
 section {
-  display: flex;
+  display: inline-block;
   background-color: ivory;
   margin-top: -30px;
 }
-
 
 .logo {
   font-family: "Dancing Script", cursive;
@@ -257,4 +256,74 @@ ul li a {
   position: absolute;
   right: 30px;
   top: 15px;
+}
+
+/* For Mobiles*/
+/* 
+@media only screen and (max-width: 468px) {
+  .navigation-container ul li {
+    display: none;
+  }
+
+  .marquee-text {
+    font-size: 35px;
+    position: absolute;
+    top: 50px;
+  }
+
+  .blade-one,
+  .blade-three-row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .blade-tile {
+    margin: 10px;
+  }
+
+  .blade-four-rows {
+    display: block;
+  }
+
+  .blade-four-rows .four-tile {
+    margin: 10px;
+  }
+
+  .blade-two-tile-two img {
+    display: none;
+  }
+
+  .blade-two-tiles {
+    margin: 10px;
+  }
+
+  .blade-one {
+    display: block;
+    text-align: center;
+  }
+
+  .blade-three-row {
+    margin: 20px;
+    display: block;
+  }
+
+  
+  .contact-us {
+    display: none;
+  }
+  .legal-footer p {
+    font-size: 12px;
+  }
+
+  .social-media{
+    padding-left: 0px;
+  }
+}
+ */
+
+/* Desktop*/
+@media (min-width: 1024px) {
+  section {
+    display: flex;
+  }
 }
