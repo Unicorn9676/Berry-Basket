@@ -44,14 +44,62 @@ section {
 }
 
 .marquee-text {
-  font-size: 90px;
+  font-size: 30px;
   position: absolute;
-  top: 190px;
-  left: 20px;
+  top: 50%;
+  left: 0%;
   color: beige;
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 2px;
+  transform: translate(0%, -50%);
+}
+
+.button-type p {
+  border: 1px solid blanchedalmond;
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 9px;
+  position: absolute;
+  top: 340px;
+  left: 10px;
+  font-style: italic;
+}
+
+.button-type-two p {
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 9px;
+  position: absolute;
+  top: 340px;
+  left: 160px;
+  font-style: italic;
+  background-color: cadetblue;
+}
+
+.button-type-two p a {
+  text-decoration: none;
+}
+
+.button-type p a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.button-type p:hover {
+  background-color: burlywood;
+  transition: 0.6s;
+}
+
+.button-type-two p:hover {
+  background-color: cornflowerblue;
+  transition: 0.1s;
 }
 
 .blade-one,
@@ -69,10 +117,6 @@ section {
 ul li a {
   text-decoration: none;
   color: black;
-}
-
-.tile-text {
-  text-align: center;
 }
 
 .blade-one-img img {
@@ -125,6 +169,10 @@ ul li a {
   padding: 10px;
 }
 
+.blade-two-tile-two img {
+  width: 120px;
+}
+
 .blade-two-tile-three img {
   border-radius: 60%;
   position: absolute;
@@ -135,6 +183,10 @@ ul li a {
 
 .blade-three {
   padding-bottom: 20px;
+}
+
+.blade-three-row {
+  margin: 25px;
 }
 
 .three-text {
@@ -180,11 +232,18 @@ ul li a {
   font-size: 30px;
 }
 
+.blade-four-rows {
+  display: block;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
 .four-tile {
   display: flex;
   grid-gap: 10px;
   background-color: cornsilk;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .four-tile-img img {
@@ -264,6 +323,18 @@ ul li a {
     margin-top: 40px;
   }
 
+  .marquee-text {
+    font-size: 90px;
+    position: absolute;
+    top: 39%;
+    left: 0%;
+    transform: translate(-0%, -39%);
+  }
+
+  .blade-two-tile-two img {
+    width: 100%;
+  }
+
   .blade-three-row {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -279,5 +350,12 @@ ul li a {
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
     padding-bottom: 40px;
+  }
+
+  .four-tile {
+    display: flex;
+    grid-gap: 10px;
+    background-color: cornsilk;
+    border-radius: 10px;
   }
 }
