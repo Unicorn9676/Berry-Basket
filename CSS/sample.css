@@ -23,9 +23,14 @@ body {
 
 .navigation-container .logo {
   margin-right: 640px;
+  display: none;
 }
 .navigation-list {
   padding-right: 20px;
+}
+
+.navigation-list ul {
+  padding-left: 20px;
 }
 
 .navigation-list ul li a:hover {
@@ -35,9 +40,10 @@ body {
 }
 
 .navigation-list ul li {
-  display: inline-block;
+  display: block;
   margin: 0;
   margin-right: 35px;
+  font-family: "Charm", cursive;
 }
 
 .navigation-list ul li a {
@@ -49,43 +55,21 @@ body {
 .marquee-text {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 2%;
   color: beige;
   font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
   letter-spacing: 2px;
-  transform: translate(0%, -50%);
+  transform: translate(2%, -50%);
 }
 
 .marquee-text p {
   font-size: 30px;
+  padding-top: 50px;
+  font-family: "Bungee Inline", cursive;
 }
 
 .button-type {
-  display: block;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-  padding-left: 20px;
-}
-
-.button-type p {
-  border: 1px solid blanchedalmond;
-  border-radius: 15px;
-  text-align: center;
-  font-style: italic;
-  font-size: 18px;
-  padding: 10px;
-  margin-right: 20px;
-}
-
-.button-type p a {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-.button-type p:hover {
-  background-color: burlywood;
-  transition: 0.6s;
+  display: none;
 }
 
 .blade-one,
@@ -341,11 +325,7 @@ ul li a {
 }
 
 .spotlight {
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 1024px;
-  margin: 0 auto;
-  border-radius: 10px;
+  display: block;
 }
 
 .spotlight-text {
@@ -374,6 +354,7 @@ ul li a {
 
 .drawer {
   padding-bottom: 20px;
+  margin: auto 20px;
 }
 
 .drawer-title {
@@ -455,15 +436,27 @@ ul li a {
     margin-top: 40px;
   }
 
+  .navigation-container .logo {
+    margin-right: 640px;
+    display: block;
+  }
+
   .marquee-text {
     position: absolute;
     top: 39%;
-    left: 0%;
-    transform: translate(-0%, -39%);
+    left: 2%;
+    transform: translate(-2%, -39%);
   }
 
   .marquee-text p {
-    font-size: 90px;
+    font-size: 60px;
+    font-family: "Bungee Inline", cursive;
+  }
+
+  .navigation-list ul li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 35px;
   }
 
   .blade-two-tile-two img {
@@ -515,5 +508,27 @@ ul li a {
     font-size: 18px;
     padding: 10px;
     margin-right: 20px;
+  }
+
+  .button-type p a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .button-type p:hover {
+    background-color: burlywood;
+    transition: 0.6s;
+  }
+
+  .drawer {
+    padding-bottom: 20px;
+  }
+
+  .spotlight {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 10px;
   }
 }
