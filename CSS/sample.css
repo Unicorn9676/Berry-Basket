@@ -34,8 +34,7 @@ body {
 }
 
 .navigation-list ul li a:hover {
-  background-color: cornsilk;
-  color: black;
+  border-bottom: 2px solid blanchedalmond;
   transition-delay: 0.2s;
 }
 
@@ -49,27 +48,169 @@ body {
 .navigation-list ul li a {
   color: antiquewhite;
   padding: 5px;
-  border-radius: 5px;
 }
 
 .marquee-text {
   position: absolute;
   top: 50%;
   left: 2%;
-  color: beige;
+  color: honeydew;
   font-weight: 500;
   letter-spacing: 2px;
   transform: translate(2%, -50%);
 }
 
 .marquee-text p {
-  font-size: 30px;
+  font-size: 50px;
   padding-top: 50px;
-  font-family: "Bungee Inline", cursive;
+  font-family: "Niconne", cursive;
+  text-shadow: 2px 2px blue;
+}
+
+.marquee-img img {
+  width: 800;
 }
 
 .button-type {
   display: none;
+}
+.sticky {
+  position: sticky;
+  background-color: floralwhite;
+  padding: 1px;
+  padding-left: 90px;
+  top: 0;
+  font-size: 20px;
+  z-index: 999;
+}
+
+.sticky ul li {
+  display: inline-block;
+  margin-right: 30px;
+  font-style: italic;
+}
+
+.sticky ul li:hover {
+  background-color: cyan;
+  opacity: 0.7;
+  transition-delay: 0.2s;
+}
+
+.sticky ul li {
+  padding: 5px;
+  border-radius: 10px;
+}
+.blade-one-gallery {
+  background-color: darkslategray;
+  padding: 10px 0;
+}
+
+.blade-one-gallery h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px black;
+}
+.blade-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 525px 525px;
+  width: 1024px;
+  margin: 20px auto;
+}
+
+.menu img:hover {
+  transform: scale(1.1);
+  transition-delay: 0.9s;
+  transition: transform 0.9s;
+}
+
+.blade-two-articles {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.article-image {
+  position: relative;
+}
+
+.article-image-text p {
+  margin: 0;
+  padding: 20px;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.blade-two-blog {
+  width: 440px;
+  background-color: white;
+  position: absolute;
+  right: -220px;
+  top: 320px;
+  border-radius: 10px;
+}
+.blade-two-blog p {
+  margin: 0;
+  padding: 70px 30px;
+  font-size: 18px;
+}
+
+.blade-two-blog .first-line {
+  font-weight: bold;
+  color: gray;
+}
+
+.blade-two-blog .second-line:hover,
+.third-line:hover {
+  color: gray;
+  transition: 0.2s;
+}
+
+.blade-article {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: right;
+}
+
+.article-title p {
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.halves-row {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 20px;
+  padding-bottom: 10px;
+  padding-left: 90px;
+  padding-top: 20px;
+}
+
+.halves-row-image img {
+  border-radius: 10px;
+}
+
+.halves-row-text p {
+  text-align: left;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.halves-row-text .first-line {
+  font-weight: bold;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.halves-row-text .second-line {
+  font-weight: 600;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .blade-one,
@@ -443,14 +584,17 @@ ul li a {
 
   .marquee-text {
     position: absolute;
-    top: 39%;
-    left: 2%;
+    top: 45%;
+    left: 4%;
     transform: translate(-2%, -39%);
   }
 
   .marquee-text p {
-    font-size: 60px;
-    font-family: "Bungee Inline", cursive;
+    font-size: 90px;
+  }
+
+  .marquee-img img {
+    width: 100%;
   }
 
   .navigation-list ul li {
